@@ -1,7 +1,9 @@
 // Script for to get Github contributors list
 const contributors = document.getElementById("contributors");
 const repo = "PetMe";
-const owner = "akshitagupta15june";
+
+const owner = "parthpatel";
+
 const apiURL = `https://api.github.com/repos/${owner}/${repo}/contributors`;
 
 
@@ -63,10 +65,12 @@ function googleTranslateElementInit() {
 
 var imageIndex = 0;
 var imagesArray = [
+
     "url('../Assets/Images/main-heading-body-bg.jpg') center",
     "url('../Assets/Images/main-heading-body-bg2.png') center",
     "url('../Assets/Images/main-heading-body-bg3.png') center",
     "url('../Assets/Images/main-heading-body-bg4.png') center"
+
 ];
 
 function changeBackground() {
