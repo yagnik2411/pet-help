@@ -63,10 +63,10 @@ function googleTranslateElementInit() {
 
 var imageIndex = 0;
 var imagesArray = [
-    "url('../Assets/Images/main-heading-body-bg.jpg') center",
-    "url('../Assets/Images/main-heading-body-bg2.png') center",
-    "url('../Assets/Images/main-heading-body-bg3.png') center",
-    "url('../Assets/Images/main-heading-body-bg4.png') center"
+    "url('./Assets/Images/main-heading-body-bg.jpg') center",
+    "url('./Assets/Images/main-heading-body-bg2.png') center",
+    "url('./Assets/Images/main-heading-body-bg3.png') center",
+    "url('./Assets/Images/main-heading-body-bg4.png') center"
 ];
 
 function changeBackground() {
