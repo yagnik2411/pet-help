@@ -110,15 +110,15 @@
         <br>
         <br>
         <br>
-        <div>
+        <div >
           <h1
-            class="m-heading text-3xl lg:text-6xl hover:shadow-2xl antialiased hover:subpixel-antialiased">
+            class="m-heading text-3xl lg:text-6xl hover:shadow-2xl antialiased hover:subpixel-antialiased rounded-2xl" style="background-color: #092635" >
             Meet our Friends Here
           </h1>
         </div>
         <br />
-        <div class="one-line-card" id="meet">
-          <div class="main-card card-height shadow-2xl" style="background-color: #9EC8B9;">
+        <div class="one-line-card" id="meet" >
+          <div class="main-card card-height shadow-2xl" style="background-color: #9EC8B9;visibility:visible;">
             <div class="main-img">
               <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
                 <a href="#">
@@ -668,21 +668,26 @@
       const year = date.getFullYear();
       document.getElementById("date").innerHTML = year;
     </script>
-    <script>
-      // Add this JavaScript code to trigger the animation when meet cards come into view
-      window.addEventListener("scroll", function () {
-        const meetCards = document.querySelectorAll(".main-card");
-        const scrollPosition = window.scrollY + window.innerHeight;
+    
+    
+<script>
+  // Function to animate meet cards
+  function animateMeetCards() {
+    const meetCards = document.querySelectorAll(".main-card");
 
-        meetCards.forEach((card) => {
-          const cardOffset = card.offsetTop;
-          if (scrollPosition > cardOffset) {
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-          }
-        });
-      });
-    </script>
+    meetCards.forEach((card) => {
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    });
+  }
+
+  // Call the function when the page loads
+  document.addEventListener("DOMContentLoaded", function () {
+    animateMeetCards();
+  });
+</script>
+
+
     <script>
       // close the menu when a nav link is clicked
       const menu_btn = document.querySelector("#nav-button");
