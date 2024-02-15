@@ -70,11 +70,12 @@
 }
 
 .pet-card-flex {
-  background-image: url("./Assets/Images/pattern\ doodle.png");
+  background-image: url("../Assets/Images/pattern\ doodle.png");
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #9EC8B9;
 }
 
 .main-card {

@@ -158,16 +158,15 @@
     padding: 0.8rem 2rem;
     font-size: 1.5rem;
     border-radius: 0.5rem;
-    border: 0.1rem solid rgb(68, 38, 0);
     color: #fff;
     cursor: pointer;
-    background: #895a21 !important;
+    background: #0A0303 !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hover-button:hover {
     /* Hover styles */
-    background: #ffbb00 !important;
+    background: #b31111 !important;
     color: #000000;
 }
 
