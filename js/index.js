@@ -66,7 +66,7 @@ function googleTranslateElementInit() {
 var imageIndex = 0;
 var imagesArray = [
 
-    "url('../Assets/Images/main-heading-body-bg.jpg') center",
+    "url('../Assets/Images/dog-park-petting-dog.jpg') center",
     "url('../Assets/Images/main-heading-body-bg2.png') center",
     "url('../Assets/Images/main-heading-body-bg3.png') center",
     "url('../Assets/Images/main-heading-body-bg4.png') center"
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   });
 
-    
+
   function isValidEmail(email) {
     // Regular expression for email validation
     const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
