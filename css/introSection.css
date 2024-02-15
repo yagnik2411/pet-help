@@ -70,7 +70,9 @@
 }
 
 .pet-card-flex {
-  background-image: url("../Assets/Images/pattern\ doodle.png");
+  background-image: url("../Assets/Images/pattern\ doodle.jpg");
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
