@@ -6,21 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="../Assets/Images/apple-touch-icon.png" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/Assets/Images/favicon-32x32.png" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/Assets/Images/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
           crossorigin />
@@ -31,13 +16,11 @@
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/mobileView.css" />
         <link rel="stylesheet" href="../css/reportstary.css">
+        <link rel="stylesheet" href="../css/Emergencybutton.css">
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="../Assets/Images/logo.svg" />
-        <script
-          defer
-          src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+          href="../Assets/Images/logo.svg" />     
         <link
           href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
           rel="stylesheet" />
@@ -62,26 +45,7 @@
       <span class="mission-2 mission-dark"> Saving Animals </span>
 
     </div>
-    <!-- <button
-      data-collapse-toggle="navbar-default"
-      type="button"
-      class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none text_4"
-      aria-controls="navbar-default"
-      aria-expanded="false"
-      id="nav-button">
-      <span class="sr-only">Open main menu</span>
-      <svg
-        class="w-6 h-6"
-        aria-hidden="true"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </button> -->
+
     <nav class>
       <div class="hidden w-full lg:block z-2" id="navbar">
 
@@ -107,12 +71,7 @@
               class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
               News</a>
           </li>
-          <li>
-            <a
-              href="./petfood.html"
-              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
-              Food</a>
-          </li>
+          
           <li>
             <a
               href="./blog.html"
@@ -158,38 +117,14 @@
             </div>
           </li>
           <li>
-            <a href="#contact">
+            <a href="./contact.html">
               <button
-                class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform">
-                Contact Us
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
-                  viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+                class="inline-flex items-center bg-[#092635] border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:bg-white hover:text-[#092635]">
+                Contact Us                    
               </button>
             </a>
           </li>
-          <!-- <li>
-            <a id="theme-toggle">
-              <i
-                class="ri-sun-line turn-yellow-hover light-theme"
-                id="switch"
-              ></i>
-            </a>
-          </li> -->
-          <!-- google translate -->
-          <!-- <div id="google_translate_element">
-            <script
-              type="text/javascript"
-              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-            ></script>
-          </div> -->
+
         </ul>
       </div>
     </nav>
@@ -279,14 +214,28 @@
           <div class="flex justify-center">
             <div class="form-group text-white">
               <button type="submit" id="submit"
-                class="flex mx-auto text-white bg-amber-900 border-0 py-3 px-12 rounded-md cursor-pointer hover:bg-yellow-900" style="background-color: #5C8374;">Submit</button>
+                class="flex mx-auto text-white border-0 py-3 px-12 rounded-md cursor-pointer " style="background-color: #5C8374;">Submit</button>
             </div>
           </div>
     
     
         </form>
       </div>
-      <footer class="bg-black text-white shadow-inner pt-4 pb-8"
+      <button class="help_btn ">emergency</button>
+      <dialog id="popup" class="popup border-2 border-[#5C8374]" style="display:none">
+        <div class="bg-white rounded-lg p-6 max-w-md">
+            <div class="Head text-center">
+                <h1 class="Head_text text-2xl font-semibold text-[#5C8374]">Get Help</h1>
+                <button id="close" aria-label="close" formnovalidate class="text-gray-600 hover:text-gray-800 focus:outline-none absolute top-2 right-6">X</button>
+            </div>
+            <h2 class="subHead text-xl font-light text-gray-600 mt-4">Search a city name and find pet care centers near you</h2>
+            <input placeholder="enter your location" type="text" id="input" name="input"
+                class="rounded-full p-2 border border-gray-300 w-full max-w-md mx-auto my-6">
+            <button id="GoButton" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none mx-auto">Search</button>
+        </div>
+    </dialog>
+
+      <footer class="text-white shadow-inner pt-4 pb-8"
       style="background-color: #092635;">
       <div class="flex p-5 justify-between">
         <div
@@ -329,7 +278,7 @@
                   Email address is required.
                 </div>
                 <button
-                  class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
+                  class="hover:bg-red-600 text-white py-2 px-4 rounded-md"
                   type="submit"
                   id="subscribe-button"
                   style="background-color: #5C8374;">
@@ -422,6 +371,6 @@
 </script>
 <script src="../js/index.js"></script>
 <script src="../js/navbar.js"></script>
-<script src="../js/reportstary.js"></script>
+<script src="../js/emergency.js"></script>
 </body>
 </html>

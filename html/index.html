@@ -4,21 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/Assets/Images/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/Assets/Images/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/Assets/Images/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
@@ -29,6 +15,7 @@
     <link rel="stylesheet" href="../css/introSection.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/mobileView.css" />
+    <link rel="stylesheet" href="../css/Emergencybutton.css">
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -39,14 +26,14 @@
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet" />
-    <title>PetMe</title>
+    <title>Pet Help</title>
   </head>
 
   <body>
     <header
-      class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
+      class="header text-gray-400  body-font flex flex-row items-center justify-center lg:justify-around"
       id="header"
-      style="background-color: 5C8374;">
+      style="background-color: #5C8374;">
       <div
         class="flex flex-row items-center md:flex-row md:items-center p-2"
         id="logo">
@@ -102,24 +89,19 @@
             <li>
               <a
                 href="./petnews.html"
-                class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
+                class="text-custom-heading font-bold hover:underline underline-offset-4  navbar-item">Pet
                 News</a>
             </li>
-            <li>
-              <a
-                href="./petfood.html"
-                class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
-                Food</a>
-            </li>
+           
             <li>
               <a
                 href="./blog.html"
-                class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+                class="text-custom-heading font-bold hover:underline underline-offset-4  navbar-item">Blogs</a>
             </li>
             <li>
               <a
                 href="./donate.html"
-                class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
+                class="text-custom-heading font-bold hover:underline underline-offset-4  navbar-item">Donate</a>
             </li>
             <li>
               <div
@@ -128,28 +110,14 @@
                 class="relative">
                 <a
                   @mouseover="open = true"
-                  class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
+                  class="text-custom-heading flex font-bold hover:underline underline-offset-4  navbar-item w-full">
                   Support Us
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14px"
-                    height="14px"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="mt-1">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"></path>
-                  </svg>
                 </a>
                 <div
                   x-show="open"
                   class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
                   <a
-                    href="volunteer.html"
+                    href="#"
                     class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
                     a Volunteer</a>
                 </div>
@@ -162,38 +130,13 @@
                 Report</a>
             </li>
             <li>
-              <a href="/html/contact.html">
+              <a href="./contact.html">
                 <button
-                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform">
-                  Contact Us
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
-                    viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
+                  class="inline-flex items-center bg-[#092635] border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:bg-white hover:text-[#092635]">
+                  Contact Us                    
                 </button>
               </a>
             </li>
-            <!-- <li>
-              <a id="theme-toggle">
-                <i
-                  class="ri-sun-line turn-yellow-hover light-theme"
-                  id="switch"
-                ></i>
-              </a>
-            </li> -->
-            <!-- google translate -->
-            <!-- <div id="google_translate_element">
-              <script
-                type="text/javascript"
-                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-              ></script>
-            </div> -->
           </ul>
         </div>
       </nav>
@@ -220,12 +163,13 @@
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <p id="About"></p>
         <h2
-          class="mb-8 text-7xl tracking-tight hover:underline underline-offset-4 turn-yellow-hover antialiased font-extrabold text-center text-gray-900 dark:text-white text_3"
+          class="mb-8 text-7xl tracking-tight hover:underline underline-offset-4
+           turn-yellow-hover antialiased font-extrabold text-center text-gray-900 dark:text-white text_3"
           style="padding-top: 120px; padding-bottom: 25px">
           About Us
         </h2>
         <p
-          class="mb-8 lg:mb-16 font-light text-center text-grey-900 dark:text-white text_3 sm:text-2xl text_6">
+          class="mb-8 lg:mb-16 font-Bold text-center text-grey-900 dark:text-black text_3 sm:text-2xl text_6">
           Our mission is to provide a platform that connects animal lovers with
           pets in need of a forever home, while also providing emergency medical
           care for stray animals in distress. We strive to make a difference in
@@ -241,6 +185,21 @@
         </p>
 
       </div>
+
+      <button class="help_btn ">emergency</button>
+      <dialog id="popup" class="popup border-2 border-[#5C8374]" style="display:none">
+        <div class="bg-white rounded-lg p-6 max-w-md">
+            <div class="Head text-center">
+                <h1 class="Head_text text-2xl font-semibold text-[#5C8374]">Get Help</h1>
+                <button id="close" aria-label="close" formnovalidate class="text-gray-600 hover:text-gray-800 focus:outline-none absolute top-2 right-6">X</button>
+            </div>
+            <h2 class="subHead text-xl font-light text-gray-600 mt-4">Search a city name and find pet care centers near you</h2>
+            <input placeholder="enter your location" type="text" id="input" name="input"
+                class="rounded-full p-2 border border-gray-300 w-full max-w-md mx-auto my-6">
+            <button id="GoButton" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full focus:outline-none mx-auto">Search</button>
+        </div>
+    </dialog>
+
     </section>
 
     <!-- About Us section  html ends here -->
@@ -386,21 +345,6 @@
       document.getElementById("date").innerHTML = year;
     </script>
     <script>
-      // Add this JavaScript code to trigger the animation when meet cards come into view
-      window.addEventListener("scroll", function () {
-        const meetCards = document.querySelectorAll(".main-card");
-        const scrollPosition = window.scrollY + window.innerHeight;
-
-        meetCards.forEach((card) => {
-          const cardOffset = card.offsetTop;
-          if (scrollPosition > cardOffset) {
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-          }
-        });
-      });
-    </script>
-    <script>
       // close the menu when a nav link is clicked
       const menu_btn = document.querySelector("#nav-button");
       const nav_links = document.querySelectorAll("nav ul li");
@@ -414,6 +358,7 @@
           }
         });
       });
+      
 
       // Add this JavaScript code to trigger the animation when About content comes into view
       window.addEventListener("scroll", function () {
@@ -430,7 +375,8 @@
     </script>
     <script src="../js/index.js"></script>
     <script src="../js/navbar.js"></script>
-    <!-- <script src="../js/light-dark-theme.js"></script> -->
+    <script src="../js/emergency.js"></script>
+ 
   </body>
 
 </html>

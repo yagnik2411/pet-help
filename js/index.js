@@ -1,10 +1,7 @@
 // Script for to get Github contributors list
 const contributors = document.getElementById("contributors");
-const repo = "PetMe";
 
-const owner = "parthpatel";
 
-const apiURL = `https://api.github.com/repos/${owner}/${repo}/contributors`;
 
 
 function displayContributors(contributorsList) {
@@ -80,7 +77,7 @@ function changeBackground() {
 
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelector(".main-body-section-div").style.background = imagesArray[0];
-  setInterval(changeBackground, 2000);
+  setInterval(changeBackground, 4000);
 });
 
 
@@ -115,5 +112,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // scroll to top function
 
-// Change to the stored current theme.
-changeToCurrTheme()
