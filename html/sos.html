@@ -201,7 +201,7 @@
             location of the stray animal.</p>
         </div>
         <form class="flex flex-col  md:w-2/3 max-w-[775px] w-auto sm:mx-6 mx-2" id="survey-form"
-          action="https://formspree.io/f/xayaokzl" method="POST">
+          action="http://localhost:8080/sos" method="POST">
           <div class="form-group mb-2">
             <label for="name">Name
               <span class="hint text-red-600">*</span>
@@ -219,7 +219,7 @@
               Address(street address,City, pincode)
               <span class="hint text-red-600">*</span>
             </label>
-            <input type="address" name="first address" id="first address" class="form-control"
+            <input type="address" name="address1" id="first address" class="form-control"
               placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
           </div>
           <div class="form-group mb-2">
@@ -227,7 +227,7 @@
               Landmark
               <span class="hint text-red-600">*</span>
             </label>
-            <input type="address" min="1" name="address" id="address" class="form-control"
+            <input type="address" min="1" name="address2" id="address" class="form-control"
               placeholder="Enter the nearest landmark to identify the location." required/>
           </div>
           <div class="form-group mb-2">
@@ -235,7 +235,7 @@
               Contact number
               <span class="hint text-red-600">*</span>
             </label>
-            <input type="tel" name="contact-no" id="contact" class="form-control"
+            <input type="tel" name="contact_no" id="contact" class="form-control"
               placeholder="Enter an active contact number" required/>
           </div>
           <div class="form-group mb-4">
@@ -255,15 +255,15 @@
           <div class="form-group">
             <label>What is the condition of the animal currently?</label>
             <label>
-              <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+              <input name="user_recommend" value="definitely" type="radio" class="input-radio" checked />
               Extremely Critical
             </label>
             <label>
-              <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
+              <input name="user_recommend" value="maybe" type="radio" class="input-radio" />
               Critical
             </label>
             <label>
-              <input name="user-recommend" value="no" type="radio" class="input-radio" />
+              <input name="user_recommend" value="no" type="radio" class="input-radio" />
               Moderate health
             </label>
           </div>
