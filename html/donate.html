@@ -148,7 +148,7 @@
             Fill up the form below and donate your pets.
           </p>
         </div>
-        <form id="survey-form" action="https://formspree.io/f/xayaokzl"
+        <form id="survey-form" action="/submit-form"
           method="POST" name="survey-form" onsubmit="return validateForm()">
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
             <div class="flex flex-wrap -m-2">
@@ -157,7 +157,7 @@
                   <label for="name" class="leading-7 text-sm text-gray-900">Full
                     Name</label>
                   <input type="text" id="name" name="name"
-                    placeholder="John Doe" autocomplete="off"
+                    placeholder="John Doe" autocomplete="on"
                     class="w-full  bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     required />
                 </div>
@@ -445,5 +445,6 @@
       </div>
 
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

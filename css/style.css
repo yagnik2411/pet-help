@@ -154,10 +154,11 @@
         transition: background-color 0.1s ease, color 0.1s ease;
     }
 
-    .hover-button:hover {
-        background: #47ab84 !important;
-        color: #f1eaea;
-    }
+.hover-button:hover {
+    /* Hover styles */
+    background: #b31111 !important;
+    color: #000000;
+}
 
     @keyframes fade-in-right {
         0% {
@@ -165,59 +166,10 @@
             transform: translateX(20px);
         }
 
-<<<<<<< HEAD
         100% {
             opacity: 1;
             transform: translateX(0);
         }
-=======
-    .contact-form-container {
-        max-width: 700px;
-        width: 100%;
-        margin: auto;
-    }
-}
-
-/* Add this CSS code to hide the About content initially */
-#about .fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.contributors {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.contributors-container {
-    padding-top: 20px;
-}
-
-.hover-button {
-    /* Button styles */
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    font-size: 1.5rem;
-    border-radius: 0.5rem;
-    color: #fff;
-    cursor: pointer;
-    background: #0A0303 !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.hover-button:hover {
-    /* Hover styles */
-    background: #5c8374 !important;
-    color: #000000;
-}
-
-@keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
->>>>>>> 4afdebc4e6189fbc30a07b97c9494950b8b6a8ef
     }
 
     .anima-fade-in-right {
