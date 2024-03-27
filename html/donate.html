@@ -148,7 +148,7 @@
             Fill up the form below and donate your pets.
           </p>
         </div>
-        <form id="survey-form" action="/submit-form"
+        <form id="survey-form" action="http://localhost:8080/donatePet"
           method="POST" name="survey-form" onsubmit="return validateForm()">
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
             <div class="flex flex-wrap -m-2">
@@ -230,7 +230,7 @@
                 <div class="relative">
                   <label for="pet-type"
                     class="leading-7 text-sm text-gray-900">Pet Type</label>
-                  <input type="text" id="pet-type" name="pet-type"
+                  <input type="text" id="pet-type" name="pet_type"
                     placeholder="Dog" autocomplete="off"
                     class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     required />
@@ -240,7 +240,7 @@
                 <div class="relative">
                   <label for="name" class="leading-7 text-sm text-gray-900">Pet
                     Name</label>
-                  <input type="text" id="pet-name" name="name"
+                  <input type="text" id="pet-name" name="pet_name"
                     placeholder="Charlie" autocomplete="off"
                     class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                 </div>
@@ -249,7 +249,7 @@
                 <div class="relative">
                   <label for="pet-color"
                     class="leading-7 text-sm text-gray-900">Pet Color</label>
-                  <input type="text" id="pet-color" name="pet-color"
+                  <input type="text" id="pet-color" name="pet_color"
                     placeholder="Yellow" autocomplete="off"
                     class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     required />
@@ -259,7 +259,7 @@
                 <div class="relative">
                   <label for="color" class="leading-7 text-sm text-gray-900">Pet
                     Breed</label>
-                  <input type="text" id="breed" name="color"
+                  <input type="text" id="breed" name="pet_breed"
                     placeholder="German Shepherd" autocomplete="off"
                     class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     required />
